@@ -64,17 +64,6 @@ function printTreeBreadthFirst(tree){
     return 'done'
 }
 
-function printTreeDepthFirst(tree){
-    // Depth-first traversal
-    let stack = [tree];
-    while(stack.length){
-        let node = stack.pop();
-        console.log(node.value);
-        if(node.left) stack.push(node.left);
-        if(node.right) stack.push(node.right);
-    }
-    return 'done'
-}
 
 // Below is testing code
 
@@ -82,7 +71,6 @@ function printTreeDepthFirst(tree){
 // console.log(printTreePreOrder(root))
 // console.log(printTreePostOrder(root))
 // console.log(printTreeBreadthFirst(root))
-// console.log(printTreeDepthFirst(root))
 
 // For Comparison
 console.log(root)
