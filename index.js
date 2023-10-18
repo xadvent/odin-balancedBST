@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import buildTree from "./src/buildTree.js";
+import { levelOrder } from "./src/levelOrder.js";
 import prettyPrint from "./src/prettyPrint.js";
 import { printTreeInOrder, printTreePreOrder, printTreePostOrder, printTreeBreadthFirst } from "./src/traversals.js";
 
@@ -28,6 +29,11 @@ let root = buildTree(arr);
 // root.delete(9)
 // prettyPrint(root)
 
+
+// TESTING LEVEL ORDER
+prettyPrint(root)
+console.log('------------------')   
+console.log(levelOrder(root))
 
 
 // TESTING TRAVERSALS

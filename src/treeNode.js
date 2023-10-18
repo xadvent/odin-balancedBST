@@ -60,6 +60,26 @@ export default class TreeNode {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 Breakdown for the delete method:
     1. Case: The current node's value is the one to be deleted (this.value === value):

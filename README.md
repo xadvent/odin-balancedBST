@@ -16,3 +16,12 @@ Also created depth-first and breadth-first print functions.
 
 - **Breadth-first:**
     - `printTreeBreadthFirst()`
+
+
+- **Functions to add:**
+    - `find()`
+    - `levelOrder()`
+    - `height()`
+    - `depth()`
+    - `isBalanced()`
+    - `rebalance()`
