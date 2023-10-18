@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 import buildTree from "./src/buildTree.js";
+import getDepth from "./src/getDepth.js";
+import getHeight from "./src/getHeight.js";
 import levelOrder from "./src/levelOrder.js";
 import prettyPrint from "./src/prettyPrint.js";
 import { printTreeInOrder, printTreePreOrder, printTreePostOrder, printTreeBreadthFirst } from "./src/traversals.js";
@@ -47,3 +49,19 @@ let root = buildTree(arr);
 // console.log(printTreePreOrder(root))
 // console.log(printTreePostOrder(root))
 // console.log(printTreeBreadthFirst(root))
+
+
+// TESTING GET DEPTH
+// prettyPrint(root)
+// console.log(getDepth(root))
+// console.log(getDepth(root.left))
+// console.log(getDepth(root.right))
+// console.log(getDepth(root.left.left))
+
+
+// TESTING GET HEIGHT
+// prettyPrint(root)
+// console.log(getHeight(root))
+// console.log(getHeight(root.left))
+// console.log(getHeight(root.right))
+// console.log(getHeight(root.left.left))
