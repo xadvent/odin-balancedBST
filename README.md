@@ -8,5 +8,6 @@ Also created depth-first searches and a breadth-first search.
 - printTreeInOrder()
 - printTreePreOrder()
 - printTreePostOrder()
+
 **Breadth-first:**
 - printTreeBreadthFirst()
