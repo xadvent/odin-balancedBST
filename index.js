@@ -5,9 +5,21 @@ import getHeight from "./src/getHeight.js";
 import levelOrder from "./src/levelOrder.js";
 import prettyPrint from "./src/prettyPrint.js";
 import { printTreeInOrder, printTreePreOrder, printTreePostOrder, printTreeBreadthFirst } from "./src/traversals.js";
+import test from "./test.js";
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-let root = buildTree(arr);
+
+
+// let tree = getRandomTree();
+// prettyPrint(tree)
+
+test();
+
+
+
+
+// EXTRA TESTING
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let root = buildTree(arr);
 
 
 // TESTING INSERT METHOD

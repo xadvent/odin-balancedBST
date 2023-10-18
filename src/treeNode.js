@@ -6,6 +6,7 @@ export default class TreeNode {
     }
 
     insert(value, left, right) {
+        if (value == this.value) return null
         if (value < this.value) {
             if (this.left === null) {
                 this.left = new TreeNode(value, left, right);
@@ -65,17 +66,6 @@ export default class TreeNode {
         : null
         
     }
-        // if (this.value === value) {
-        //     return this;
-        // } else if (value < this.value && this.left !== null) {
-        //     return this.left.search(value);
-        // } else if (value > this.value && this.right !== null) {
-        //     return this.right.search(value);
-        // } else {
-        //     return null;
-        // }
-
-
 }
 
 

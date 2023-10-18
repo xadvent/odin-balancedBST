@@ -1,16 +1,26 @@
 // Depth-first traversal
-export function printTreeInOrder(tree){
+export function printTreeInOrder(tree, values = []){
     // In-order traversal (left, root, right)
     // left
-    if(tree.left) printTreeInOrder(tree.left);
+    if(tree.left) printTreeInOrder(tree.left, values);
     
     // root
     console.log(tree.value);
 
     // right
-    if(tree.right) printTreeInOrder(tree.right);
+    if(tree.right) printTreeInOrder(tree.right, values);
 
-    return 'done'
+    return values
+}
+
+export function inOrderTraversal(tree, values = []){
+    if(tree.left) inOrderTraversal(tree.left, values);
+    
+    values.push(tree.value);
+
+    if(tree.right) inOrderTraversal(tree.right, values);
+
+    return values
 }
 
 
