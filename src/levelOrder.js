@@ -1,4 +1,4 @@
-export function levelOrder(tree){
+export default function levelOrder(tree){
     let queue = [tree];
     let result = [];
     result.push(queue[0].value)

@@ -58,6 +58,24 @@ export default class TreeNode {
         return this                                         // Return the updated node
     } 
 
+    search(value) {
+        return this.value == value ? this 
+        : value < this.value && this.left !== null ? this.left.search(value) 
+        : value > this.value && this.right !== null ? this.right.search(value) 
+        : null
+        
+    }
+        // if (this.value === value) {
+        //     return this;
+        // } else if (value < this.value && this.left !== null) {
+        //     return this.left.search(value);
+        // } else if (value > this.value && this.right !== null) {
+        //     return this.right.search(value);
+        // } else {
+        //     return null;
+        // }
+
+
 }
 
 

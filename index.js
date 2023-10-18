@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import buildTree from "./src/buildTree.js";
-import { levelOrder } from "./src/levelOrder.js";
+import levelOrder from "./src/levelOrder.js";
 import prettyPrint from "./src/prettyPrint.js";
 import { printTreeInOrder, printTreePreOrder, printTreePostOrder, printTreeBreadthFirst } from "./src/traversals.js";
 
@@ -9,7 +9,6 @@ let root = buildTree(arr);
 
 
 // TESTING INSERT METHOD
-
 // root.insert(11);
 // prettyPrint(root)
 // console.log('------------------')
@@ -18,9 +17,7 @@ let root = buildTree(arr);
 // prettyPrint(root)
 
 
-
 // TESTING DELETE METHOD
-
 // prettyPrint(root)
 // console.log('------------------')
 // for(let i = 1; i < root.value; i++){
@@ -31,14 +28,21 @@ let root = buildTree(arr);
 
 
 // TESTING LEVEL ORDER
-prettyPrint(root)
-console.log('------------------')   
-console.log(levelOrder(root))
+// prettyPrint(root)
+// console.log('------------------')   
+// console.log(levelOrder(root))
+
+
+// TESTING SEARCH
+// console.log(root.search(1))
+// console.log(root.search(5))
+// console.log(root.search(10))
+// console.log(root.search(110)) // null
 
 
 // TESTING TRAVERSALS
-
 // console.log(root)
+// console.log('------------------')
 // console.log(printTreeInOrder(root))
 // console.log(printTreePreOrder(root))
 // console.log(printTreePostOrder(root))
