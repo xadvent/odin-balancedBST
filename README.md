@@ -1,13 +1,18 @@
 # odin-balancedBST
 Created function that creates a balanced binary search tree:
-- createTree()
+- buildTree()
 
-Also created depth-first searches and a breadth-first search.
+Added methods to the treeNodes:
+- `insert()`
+- `delete()`
+Breakdown of delete function can be found in `src/treeNode.js`
 
-**Depth-first:**
-- printTreeInOrder()
-- printTreePreOrder()
-- printTreePostOrder()
 
-**Breadth-first:**
-- printTreeBreadthFirst()
+Also created depth-first and breadth-first print functions.
+- **Depth-first:**
+    - `printTreeInOrder()`
+    - `printTreePreOrder()`
+    - `printTreePostOrder()`
+
+- **Breadth-first:**
+    - `printTreeBreadthFirst()`

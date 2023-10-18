@@ -1,76 +1,39 @@
 #!/usr/bin/env node
-import { createTree } from "./createBST.js";
+import buildTree from "./src/buildTree.js";
+import prettyPrint from "./src/prettyPrint.js";
+import { printTreeInOrder, printTreePreOrder, printTreePostOrder, printTreeBreadthFirst } from "./src/traversals.js";
 
-const arr = [1,2,3,4,5,6,7,8,9,10]
-let root = createTree(arr);
-
-// Depth-first traversal
-function printTreeInOrder(tree){
-    // In-order traversal (left, root, right)
-    // left
-    if(tree.left) printTreeInOrder(tree.left);
-    
-    // root
-    console.log(tree.value);
-
-    // right
-    if(tree.right) printTreeInOrder(tree.right);
-
-    return 'done'
-}
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let root = buildTree(arr);
 
 
-// Depth-first traversal
-function printTreePreOrder(tree){
-    // Pre-order traversal (root, left, right)
-    // root
-    console.log(tree.value);
+// TESTING INSERT METHOD
 
-    // left
-    if(tree.left) printTreePreOrder(tree.left);
-    
-    // right
-    if(tree.right) printTreePreOrder(tree.right);
-
-    return 'done'
-}
-
-// Depth-first traversal
-function printTreePostOrder(tree){
-    // Post-order traversal (left, right, root)
-    // left
-    if(tree.left) printTreePostOrder(tree.left);
-    
-    // right
-    if(tree.right) printTreePostOrder(tree.right);
-
-    // root
-    console.log(tree.value);
-
-    return 'done'
-}
-
-// Breadth-first traversal
-function printTreeBreadthFirst(tree){
-    // Breadth-first traversal
-    // AKA Level-order traversal
-    let queue = [tree];
-    while(queue.length){
-        let node = queue.shift();
-        console.log(node.value);
-        if(node.left) queue.push(node.left);
-        if(node.right) queue.push(node.right);
-    }
-    return 'done'
-}
+// root.insert(11);
+// prettyPrint(root)
+// console.log('------------------')
+// root.insert(50);
+// root.insert(-20);
+// prettyPrint(root)
 
 
-// Below is testing code
 
+// TESTING DELETE METHOD
+
+// prettyPrint(root)
+// console.log('------------------')
+// for(let i = 1; i < root.value; i++){
+//     root.delete(i);
+// }
+// root.delete(9)
+// prettyPrint(root)
+
+
+
+// TESTING TRAVERSALS
+
+// console.log(root)
 // console.log(printTreeInOrder(root))
 // console.log(printTreePreOrder(root))
 // console.log(printTreePostOrder(root))
 // console.log(printTreeBreadthFirst(root))
-
-// For Comparison
-console.log(root)
